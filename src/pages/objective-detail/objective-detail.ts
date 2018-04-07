@@ -16,7 +16,6 @@ export class ObjectiveDetailPage implements OnInit {
   objective: Objective;
   color: string;
   bullets: Bullet;
-  domainTitle: string;
 
   constructor(
     private modalCtrl: ModalController,
@@ -31,7 +30,6 @@ export class ObjectiveDetailPage implements OnInit {
   }
 
   getObjectiveInfo() {
-    this.domainTitle = this.navParams.data.domain;
     this.objective = this.navParams.data.objective;
     this.color = this.navParams.data.color;
     this.bullets = this.domainService.getBullets(this.objective.sectionNumber);
@@ -42,9 +40,9 @@ export class ObjectiveDetailPage implements OnInit {
   }
 
   onResourcesClick() {
-    const objective = this.objective.sectionNumber;
+    const objective = this.objective.sectionNumber.toString();
     const resources: Resource[] = this.resourceService.getResources(objective);
-    const modal = this.modalCtrl.create(ResourcesPage, {resources: resources, domain: this.domainTitle});
+    const modal = this.modalCtrl.create(ResourcesPage, {resources: resources, objective: objective});
     modal.present();
   }
 

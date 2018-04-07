@@ -1,352 +1,545 @@
 import { Resource } from '../models/resource';
 
-/**
- * Resources 1.0 - Concepts
- **/
-const DOMAIN_ONE_ONE_RESOURCES: Resource[] = [
+
+export const RESOURCES: Resource[] = [
   {
-    objectiveNumber: 1.1,
-    title: 'Introduction to IP',
-    description: 'We rely on IP as the fundamental protocol on today’s networks. In this video, you’ll learn about the fundamentals of IP, TCP, UDP, and ICMP.',
-    img: 'https://img.youtube.com/vi/9qFZh29JhnA/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=9qFZh29JhnA'
+    "objectiveNumber": "1.1",
+    "title": "BIOS and UEFI",
+    "description": "Before your operating system starts, the BIOS is in charge of your computer. In this video, you’ll learn about the BIOS features in your computer and the latest generation of UEFI BIOS software.",
+    "img": "https://i.ytimg.com/vi/SlzwMKcCoMI/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=SlzwMKcCoMI"
   },
   {
-    title: 'Common Ports',
-    description: 'As you manage your network devices, you’ll notice that certain port numbers will be commonly used. In this video, you’ll learn about these common TCP and UDP ports and how to recognize applications that are using these well-known port numbers.',
-    img: 'https://img.youtube.com/vi/vp_ZxQ0CTJk/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=vp_ZxQ0CTJk'
+    "objectiveNumber": "1.1",
+    "title": "BIOS Configurations",
+    "description": "How do you make configuration changes to your BIOS? In this video, I’ll demonstrate some common BIOS configuration options that you can try on your own computer.",
+    "img": "https://i.ytimg.com/vi/wjYzV5HqxkA/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=wjYzV5HqxkA"
   },
-];
-const DOMAIN_ONE_TWO_RESOURCES: Resource[] = [
   {
-    objectiveNumber: 1.2,
-    title: 'Understanding the OSI Model',
-    description: 'The OSI model is one of the most common methods of describing application data flows. In this video, you’ll learn about the seven layers of the OSI model and how they are associated with real-world hardware and software components.',
-    img: 'https://img.youtube.com/vi/G7aVKgGUe9c/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=G7aVKgGUe9c'
+    "objectiveNumber": "1.1",
+    "title": "BIOS Security",
+    "description": "There are many ways to help secure your computer using the BIOS. In this video, you’ll learn about BIOS passwords, LoJack for Laptops, full disk encryption, and Secure Boot.",
+    "img": "https://i.ytimg.com/vi/470ddF4nZjY/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=470ddF4nZjY"
+  },
+  {
+    "objectiveNumber": "1.1",
+    "title": "Installing BIOS Upgrades",
+    "description": "As a certified CompTIA A+ professional, you may find it necessary to occasionally perform BIOS updates. In this video, you’ll learn about the process and best practices for upgrading the BIOS in your computer.",
+    "img": "https://i.ytimg.com/vi/7GTtgNjdeRs/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=7GTtgNjdeRs"
+  },
+  {
+    "objectiveNumber": "1.2",
+    "title": "An Overview of Motherboard Types",
+    "description": "There are many standard sizes of motherboards, and the different sizes provide different advantages and disadvantages. In this video, you’ll learn about the ATX and microATX standards, as well as the smaller ITX standard motherboard form factors.",
+    "img": "https://i.ytimg.com/vi/Q7A9z33Qj7M/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=Q7A9z33Qj7M"
+  },
+  {
+    "objectiveNumber": "1.2",
+    "title": "Motherboard Expansion Slots and Bus Speeds",
+    "description": "The bus of a motherboard allows communication between different components, and standardized expansion slots provide a way to easily upgrade our computers. In this video, you’ll learn about the bus architectures and how to use expansion slots to customize our PCs.",
+    "img": "https://i.ytimg.com/vi/-R6gsPo6LEQ/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=-R6gsPo6LEQ"
+  },
+  {
+    "objectiveNumber": "1.2",
+    "title": "Motherboard RAM Slots",
+    "description": "Your computer system uses a particular size and package of memory, and the size of the RAM slot usually depends on the overall size of the system. In this video, you’ll learn about DIMM, SO-DIMM, and Micro-DIMM RAM slots.",
+    "img": "https://i.ytimg.com/vi/bDKCSvmlPuc/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=bDKCSvmlPuc"
+  },
+  {
+    "objectiveNumber": "1.2",
+    "title": "CPU Sockets",
+    "description": "Our motherboards use standard socket types for our CPUs. In this video, you’ll learn about the ZIF/PGA and LGA CPU socket types.",
+    "img": "https://i.ytimg.com/vi/BTq2b5_1EGI/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=BTq2b5_1EGI"
+  },
+  {
+    "objectiveNumber": "1.2",
+    "title": "Motherboard Chipsets",
+    "description": "The chipsets of our modern motherboards have evolved over time, and much of our legacy motherboards is now contained inside of our CPUs. In this video, you’ll learn about the legacy Northbridge and Southbridge, and you’ll learn which components are now part of our modern CPUs.",
+    "img": "https://i.ytimg.com/vi/Fk9LkGhyH-0/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=Fk9LkGhyH-0"
+  },
+  {
+    "objectiveNumber": "1.2",
+    "title": "Motherboard Jumpers and Connectors",
+    "description": "The connectivity from the computer case to the motherboard consists of many wires and connectors. In this video, you’ll learn about the motherboard jumpers and connectors.",
+    "img": "https://i.ytimg.com/vi/I7zpen6GerQ/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=I7zpen6GerQ"
+  },
+  {
+    "objectiveNumber": "1.3",
+    "title": "An Overview of PC Memory Types",
+    "description": "Our computers rely on many different types of memory to perform their magic. In this video, you’ll learn about ROM, RAM, and the differences between DDR, DDR2, and DDR3.",
+    "img": "https://i.ytimg.com/vi/WzKUVZdIr10/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=WzKUVZdIr10"
+  },
+  {
+    "objectiveNumber": "1.3",
+    "title": "Understanding PC Memory",
+    "description": "Our PC memory can hold a number of interesting characteristics. In this video, you’ll learn parity memory, ECC memory, registered memory, multi-channel memory, and single- and double-sided memory.",
+    "img": "https://i.ytimg.com/vi/bmRMRlDXph0/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=bmRMRlDXph0"
+  },
+  {
+    "objectiveNumber": "1.4",
+    "title": "Installing and Configuring Expansion Cards",
+    "description": "There’s a PC expansion card for nearly any customization requirement. In this video, you’ll learn about the expansion card installation process and options for audio, video, network, and storage expansion.",
+    "img": "https://i.ytimg.com/vi/XFQnj6f4MEk/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=XFQnj6f4MEk"
+  },
+  {
+    "objectiveNumber": "1.5",
+    "title": "An Overview of Storage Devices",
+    "description": "There seems to be a different storage device type for nearly every application. In this video, you’ll learn about optical storage formats, hard disk drives, solid-state drives, hybrid drives, hot-swappable drives, flash memory drives, and tape drives.",
+    "img": "https://i.ytimg.com/vi/NgVm2kUmrYo/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=NgVm2kUmrYo"
+  },
+  {
+    "objectiveNumber": "1.5",
+    "title": "An Overview of RAID",
+    "description": "There are many ways to combine our storage devices to increase performance or provide redundancy. In this video, you’ll learn about the most popular RAID types used in our storage systems.",
+    "img": "https://i.ytimg.com/vi/NqozAmsUsWI/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=NqozAmsUsWI"
+  },
+  {
+    "objectiveNumber": "1.6",
+    "title": "An Overview of CPU Socket Types",
+    "description": "Intel and AMD continue to produce a wide range of processors, and you’ll find many different CPU sockets in use on today’s motherboards. In this video, I’ll summarize the important Intel and AMD CPU sockets that you’ll need to know for your CompTIA 220-901 A+ certification exam.",
+    "img": "https://i.ytimg.com/vi/FWxtFTHO1ak/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=FWxtFTHO1ak"
+  },
+  {
+    "objectiveNumber": "1.6",
+    "title": "Understanding CPU Characteristics",
+    "description": "Our modern processors can do much more than traditional CPUs. In this video, you’ll learn about the speeds of CPUs, on-board caches, hyper-threading, virtualization features, and much more.",
+    "img": "https://i.ytimg.com/vi/0PliMca_kVQ/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=0PliMca_kVQ"
+  },
+  {
+    "objectiveNumber": "1.6",
+    "title": "CPU Cooling",
+    "description": "Our CPU is one of the hottest devices in our computer, so it’s important to have an efficient cooling system. In this video, you’ll learn how heat sinks, on-board fans, case fans, liquid cooling, and passive cooling can be used to keep your system running at peak efficiency.",
+    "img": "https://i.ytimg.com/vi/kbQpPFc-J8k/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=kbQpPFc-J8k"
+  },
+  {
+    "objectiveNumber": "1.7",
+    "title": "Computer Interface Speeds and Distances",
+    "description": "We use many different cables and connectors with our computers. In this video, you’ll learn about some of the most popular interface speeds and distances.",
+    "img": "https://i.ytimg.com/vi/VkcKtTU61ZM/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=VkcKtTU61ZM"
+  },
+  {
+    "objectiveNumber": "1.7",
+    "title": "Wireless Interface Speeds and Distances",
+    "description": "We rely on our wireless networks to provide connectivity for almost all of our computing devices. In this video, you’ll learn about infrared, near field communication, Bluetooth, and 802.11 wireless networks.",
+    "img": "https://i.ytimg.com/vi/wyubHH3vSGM/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=wyubHH3vSGM"
+  },
+  {
+    "objectiveNumber": "1.7",
+    "title": "Connection Characteristics",
+    "description": "We use many different methods to send data over wired and wireless networks. In this video, you’ll learn about analog and digital communication, data transfer speeds, connection quality, frequencies, and much more.",
+    "img": "https://i.ytimg.com/vi/eucWMnEU2Hs/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=eucWMnEU2Hs"
+  },
+  {
+    "objectiveNumber": "1.8",
+    "title": "Computer Power Connectors",
+    "description": "Every device in our computer needs power, and there are many different ways to get the right voltages to the right component. In this video, you’ll learn about SATA power, Molex connectors, ATX 12 volt connectors, EPS 12 V power, PCI Express power interfaces, and the primary motherboard power connectors.",
+    "img": "https://i.ytimg.com/vi/mnWcYFbln84/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=mnWcYFbln84"
+  },
+  {
+    "objectiveNumber": "1.8",
+    "title": "Power Specifications",
+    "description": "Computer power systems have their own language and architecture. In this video, you’ll learn about amps, volts, power calculations, current, voltage, power supply sizing, power supply options, and much more.",
+    "img": "https://i.ytimg.com/vi/QPopjM5wu9c/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=QPopjM5wu9c"
+  },
+  {
+    "objectiveNumber": "1.9",
+    "title": "Designing Custom Computer Systems",
+    "description": "There’s a different computer system for every task. In this video, you’ll learn how to build and configure the specifications for graphics workstations, virtualization workstations, home theater PCs, and much more.",
+    "img": "https://i.ytimg.com/vi/kGeiKM-GQAI/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=kGeiKM-GQAI"
+  },
+  {
+    "objectiveNumber": "1.10",
+    "title": "An Overview of Display Devices",
+    "description": "We rely on display devices as the primary output from our computers. In this video, you’ll learn about LCD displays, plasma technology, digital projectors, OLED displays, and more.",
+    "img": "https://i.ytimg.com/vi/iskJiF3qdSY/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=iskJiF3qdSY"
+  },
+  {
+    "objectiveNumber": "1.10",
+    "title": "Display Specifications",
+    "description": "If you’re designing a computer system, you’ll need to choose the right display. In this video, you’ll learn about the most important display specifications to consider when picking out a monitor.",
+    "img": "https://i.ytimg.com/vi/AlduNHKpWfM/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=AlduNHKpWfM"
+  },
+  {
+    "objectiveNumber": "1.11",
+    "title": "Display Connectors and Cables",
+    "description": "There are many different ways to connect your computer to your display device. In this video, you’ll learn about DVI, DisplayPort, RCA, VGA, HDMI, and more.",
+    "img": "https://i.ytimg.com/vi/fsApiE1-6VM/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=fsApiE1-6VM"
+  },
+  {
+    "objectiveNumber": "1.11",
+    "title": "Device Connectors and Cables",
+    "description": "Our computing devices use many different connection types. In this video, you’ll learn about connections and cables that are used inside and outside of the computer case.",
+    "img": "https://i.ytimg.com/vi/Jetc8EfkbGA/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=Jetc8EfkbGA"
+  },
+  {
+    "objectiveNumber": "1.11",
+    "title": "Adapters and Converters",
+    "description": "As we install new systems or upgrade old ones, we often find problems connecting our hardware together. In this video, you’ll learn about many of the adapters and converters that you can use to connect video, network, and external peripheral devices.",
+    "img": "https://i.ytimg.com/vi/eWq49NrQP_c/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=eWq49NrQP_c"
+  },
+  {
+    "objectiveNumber": "1.12",
+    "title": "An Overview of PC Input Devices",
+    "description": "Our PCs wouldn’t be very useful if we couldn’t get information into the computer. In this video, you’ll learn about some of the most popular input devices.",
+    "img": "https://i.ytimg.com/vi/pKDTeKGUdEA/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=pKDTeKGUdEA"
+  },
+  {
+    "objectiveNumber": "1.12",
+    "title": "An Overview of PC Output Devices",
+    "description": "The computer’s output is just as important as the input. In this video, you’ll learn about printers, speakers, and display devices.",
+    "img": "https://i.ytimg.com/vi/pZ_D1EQuX80/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=pZ_D1EQuX80"
+  },
+  {
+    "objectiveNumber": "1.12",
+    "title": "An Overview of Input and Output Devices",
+    "description": "Some devices can be both input and output devices. In this video, you’ll learn about touch screen, KVMs, smart TVs, set-top boxes, and MIDI interfaces.",
+    "img": "https://i.ytimg.com/vi/8jqruYcnCm4/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=8jqruYcnCm4"
+  },
+  {
+    "objectiveNumber": "1.13",
+    "title": "Configuring SOHO Multifunction Devices",
+    "description": "Today’s multifunction devices can provide us with many different features. In this video, you’ll learn how these multifunction devices can print, scan, fax, copy, and connect to our modern networks.",
+    "img": "https://i.ytimg.com/vi/bKKkXwGnPnM/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=bKKkXwGnPnM"
+  },
+  {
+    "objectiveNumber": "1.14",
+    "title": "Understanding Laser Printers",
+    "description": "Laser printers are very complex mechanical devices that combine technology with a high resolution output device. In this video, you’ll learn about the internals of a laser printer and the steps of the laser printing process.",
+    "img": "https://i.ytimg.com/vi/u88_mLdiJVY/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=u88_mLdiJVY"
+  },
+  {
+    "objectiveNumber": "1.14",
+    "title": "Understanding Inkjet Printers",
+    "description": "Inkjet printers are popular output devices that use tiny drops of ink to create text and image on the page. In this video, you’ll learn how the internals of an inkjet printer work together to provide our printed output.",
+    "img": "https://i.ytimg.com/vi/QBrG82RFO5I/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=QBrG82RFO5I"
+  },
+  {
+    "objectiveNumber": "1.14",
+    "title": "Understanding Thermal Printers",
+    "description": "Thermal printers use heat instead of ink. In this video, you’ll learn how the internal components of thermal printers work together to create our printed output.",
+    "img": "https://i.ytimg.com/vi/jp0e4GCYjDI/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=jp0e4GCYjDI"
+  },
+  {
+    "objectiveNumber": "1.14",
+    "title": "Understanding Impact Printers",
+    "description": "Dot-matrix printers are some of the most venerable printing methods in used today. In this video, you’ll learn how dot-matrix printers combine a print head with a fabric ribbon to create our printed output.",
+    "img": "https://i.ytimg.com/vi/6JdBUw3-xso/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=6JdBUw3-xso"
+  },
+  {
+    "objectiveNumber": "1.14",
+    "title": "Understanding Virtual Printers",
+    "description": "Much of our printing today doesn’t create a physical printed page. In this video, you’ll learn some of the more popular techniques when using virtual printers.",
+    "img": "https://i.ytimg.com/vi/zbsF8arRNsU/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=zbsF8arRNsU"
+  },
+  {
+    "objectiveNumber": "1.15",
+    "title": "Maintaining Laser Printers",
+    "description": "Laser printers are mechanical devices that require periodic maintenance. In this video, you’ll learn about toner cartridge replacement, maintenance kits, printer calibration, and printer cleaning.",
+    "img": "https://i.ytimg.com/vi/uO1c6oNtwTw/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=uO1c6oNtwTw"
+  },
+  {
+    "objectiveNumber": "1.15",
+    "title": "Maintaining Thermal Printers",
+    "description": "Thermal printers have relatively few maintenance requirements. In this video, you’ll learn about thermal paper replacement, heating element cleaning, and debris removal.",
+    "img": "https://i.ytimg.com/vi/zPZkyLqICyE/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=zPZkyLqICyE"
+  },
+  {
+    "objectiveNumber": "1.15",
+    "title": "Maintaining Impact Printers",
+    "description": "There are some periodic maintenance tasks that will keep your impact printer running at peak efficiency. In this video, you’ll learn about ribbon replacement, print head replacement, and tractor fed paper replacement.",
+    "img": "https://i.ytimg.com/vi/A0fgo0jvWak/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=A0fgo0jvWak"
+  },
+  {
+    "objectiveNumber": "1.15",
+    "title": "Maintaining Inkjet Printers",
+    "description": "Inkjet printers are relatively easy to maintain. In this video, you’ll learn about cleaning print heads, replacing inkjet cartridges, printer calibration, and how to properly clear jams.",
+    "img": "https://i.ytimg.com/vi/r9o9pDTCppc/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=r9o9pDTCppc"
+  },
+  {
+    "objectiveNumber": "2.1",
+    "title": "Network Connectors",
+    "description": "We use many different connectors in our modern networks. In this video, you’ll learn about fiber connectors, twisted pair connectors and standards, and common coax network connectors.",
+    "img": "https://i.ytimg.com/vi/TZBOPbK9bLQ/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=TZBOPbK9bLQ"
+  },
+  {
+    "objectiveNumber": "2.2",
+    "title": "Network Cabling",
+    "description": "Your network is only as good as the cabling. In this video, you’ll learn about the characteristics of fiber communication, twisted pair copper cabling, cable categories, cabling in the plenum, and coaxial cables.",
+    "img": "https://i.ytimg.com/vi/RWCiqUm34Bc/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=RWCiqUm34Bc"
+  },
+  {
+    "objectiveNumber": "2.2",
+    "title": "Calculating Signal Loss",
+    "description": "Your network signal will degrade over a long distances, when passing through patch panels, and at the connectors. In this video, you’ll learn how to calculate signal loss and recognize symptoms of signal loss on your network.",
+    "img": "https://i.ytimg.com/vi/pBEcZI-P2Lc/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=pBEcZI-P2Lc"
+  },
+  {
+    "objectiveNumber": "2.3",
+    "title": "An Overview of IPv4 and IPv6",
+    "description": "IPv4 and IPv6 are the most popular network protocols in the world. In this video, you’ll learn about the structure of IPv4 and IPv6 addresses, the use of private IP addresses, and automatic addressing features in IPv4 and IPv6.",
+    "img": "https://i.ytimg.com/vi/k6nrH8JiTTU/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=k6nrH8JiTTU"
+  },
+  {
+    "objectiveNumber": "2.3",
+    "title": "TCP/IP Addressing",
+    "description": "Our computers must be configured with the appropriate IP addressing to properly communicate across the network. In this video, you’ll learn about IP addressing, an overview of DNS, DHCP configurations, and the basics of classless subnetting.",
+    "img": "https://i.ytimg.com/vi/I35due6RVME/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=I35due6RVME"
+  },
+  {
+    "objectiveNumber": "2.4",
+    "title": "Common TCP and UDP Ports",
+    "description": "We use transport-layer protocols to communicate to specific services on a remote device. In this video, you’ll learn about some of the most popular TCP and UDP ports used on our servers.",
+    "img": "https://i.ytimg.com/vi/MTPTow2PTfY/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=MTPTow2PTfY"
+  },
+  {
+    "objectiveNumber": "2.4",
+    "title": "Common Network Protocols",
+    "description": "Our applications rely on some very specialized protocols to surf the Internet, transfer mail, or manage our servers. In this video, you’ll learn about some of the most popular network protocols.",
+    "img": "https://i.ytimg.com/vi/xh7ekN1Vn4E/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=xh7ekN1Vn4E"
+  },
+  {
+    "objectiveNumber": "2.5",
+    "title": "Wireless Standards",
+    "description": "Our 802.11 networks are now the universal standard for connecting our devices without wires. In this video, you’ll learn about the evolution of our wireless standards and the specifications of our modern wireless networks.",
+    "img": "https://i.ytimg.com/vi/dORMbdIMd5s/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=dORMbdIMd5s"
+  },
+  {
+    "objectiveNumber": "2.5",
+    "title": "Wireless Encryption",
+    "description": "Our wireless networks wouldn’t be very useful if we weren’t able to protect our data. In this video, you’ll learn which encryption types to use and which ones to avoid.",
+    "img": "https://i.ytimg.com/vi/McccFQha2WE/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=McccFQha2WE"
+  },
+  {
+    "objectiveNumber": "2.6",
+    "title": "Configuring a SOHO Wireless Router",
+    "description": "SOHO wireless routers may be the most common network devices in the world, so it’s important that you understand some of the more detailed configuration settings. In this video, you’ll learn about wireless channels, encryption, NAT, port forwarding, port triggering, IP addressing, DMZ ports, QoS, and more.",
+    "img": "https://i.ytimg.com/vi/EtiSA9GdinQ/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=EtiSA9GdinQ"
+  },
+  {
+    "objectiveNumber": "2.7",
+    "title": "Internet Connection Types",
+    "description": "Internet connectivity is important for many people, and fortunately there are many ways to get connected. In this video, you’ll learn about cable modems, DSL, dialup networks, fiber connectivity, satellite networking, ISDN, cellular networks, and line-of-sight services.",
+    "img": "https://i.ytimg.com/vi/kBvRoEk2hcc/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=kBvRoEk2hcc"
+  },
+  {
+    "objectiveNumber": "2.7",
+    "title": "Network Types",
+    "description": "We often describe network types in broad geographical terms. In this video, you’ll learn the difference between a LAN, WAN, PAN, and MAN.",
+    "img": "https://i.ytimg.com/vi/Kv8xkdSlCF0/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=Kv8xkdSlCF0"
+  },
+  {
+    "objectiveNumber": "2.8",
+    "title": "Network Devices",
+    "description": "The physical connectivity of the network is just as important as the data that flows across it. In this video, you’ll learn about the different devices that we use to build our physical network infrastructures.",
+    "img": "https://i.ytimg.com/vi/Rc7Mtg-QsJQ/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=Rc7Mtg-QsJQ"
+  },
+  {
+    "objectiveNumber": "2.9",
+    "title": "Networking Tools",
+    "description": "If you’re going to build your own network, you need to have the right tools. In this video, you’ll learn about crimping best-practices, multimeters, toner probes, cable testers, loopback plugs, and more.",
+    "img": "https://i.ytimg.com/vi/SoWzspOKRdk/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=SoWzspOKRdk"
+  },
+  {
+    "objectiveNumber": "3.1",
+    "title": "Laptop Expansion Options",
+    "description": "There are many ways to expand the capabilities of most laptop computers. In this video, you’ll learn about ExpressCard adapters, SO-DIMM memory modules, USB flash drives, Thunderbolt connectors, and much more.",
+    "img": "https://i.ytimg.com/vi/J1zZspEGTGM/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=J1zZspEGTGM"
+  },
+  {
+    "objectiveNumber": "3.1",
+    "title": "Replacing a Desktop with a Laptop",
+    "description": "There are many components of a laptop computer that are very different than their desktop PC counterparts. In this video, you’ll learn about the differences in keyboards, laptop storage, memory, LCD screens, power options, CPUs, and more.",
+    "img": "https://i.ytimg.com/vi/8MpQraly2C4/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=8MpQraly2C4"
+  },
+  {
+    "objectiveNumber": "3.2",
+    "title": "Laptop Displays",
+    "description": "Our laptop display technologies incorporate visual output, cameras, microphones, antennas, and more. In this video, you’ll learn about some of these portable display technologies and how we use our laptop displays for much more than just viewing our computer’s output.",
+    "img": "https://i.ytimg.com/vi/WaZjWo2mM1I/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=WaZjWo2mM1I"
+  },
+  {
+    "objectiveNumber": "3.3",
+    "title": "Laptop Features",
+    "description": "A laptop has a number of technical features and capabilities that you won’t generally find on a desktop computer. In this video, you’ll learn about some of these unique laptop features.",
+    "img": "https://i.ytimg.com/vi/k540LoDm9Y4/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=k540LoDm9Y4"
+  },
+  {
+    "objectiveNumber": "3.4",
+    "title": "Mobile Devices",
+    "description": "As we become increasingly mobile, we’ve created a number of devices that can connect us from wherever we travel. In this video, you’ll learn about tablets, smart phones, wearable technology, e-readers, and much more.",
+    "img": "https://i.ytimg.com/vi/dDZ4kN2VfGU/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=dDZ4kN2VfGU"
+  },
+  {
+    "objectiveNumber": "3.5",
+    "title": "Mobile Device Connections",
+    "description": "There are many different ways to connect our mobile devices to each other and to other devices. In this video, you’ll learn about near field communication, mobile interfaces, tethering, and much more.",
+    "img": "https://i.ytimg.com/vi/ttx_M8I1_Dg/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=ttx_M8I1_Dg"
+  },
+  {
+    "objectiveNumber": "3.5",
+    "title": "Mobile Device Accessories",
+    "description": "We use many different accessories to extend the functionality of our mobile devices. In this video, you’ll learn about headsets, speakers, docking stations, protective covers, and many other mobile device accessories.",
+    "img": "https://i.ytimg.com/vi/LcMEemfMpqc/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=LcMEemfMpqc"
+  },
+  {
+    "objectiveNumber": "4.1",
+    "title": "Troubleshooting Common Hardware Problems",
+    "description": "Troubleshooting hardware can be a challenge, especially considering all of the things that could possibly go wrong. In this video, you’ll learn about some of the most common hardware problems and how to quickly solve them.",
+    "img": "https://i.ytimg.com/vi/rHtK_Gs4uws/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=rHtK_Gs4uws"
+  },
+  {
+    "objectiveNumber": "4.1",
+    "title": "Hardware Troubleshooting Tools",
+    "description": "To fix your computer, you’re going to need the right tools. In this video, you’ll learn about multimeters, power supply testers, loopback plugs, and POST cards.",
+    "img": "https://i.ytimg.com/vi/ZxmQmNNFBiw/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=ZxmQmNNFBiw"
+  },
+  {
+    "objectiveNumber": "4.2",
+    "title": "Troubleshooting Hard Drives",
+    "description": "If your storage subsystem isn’t happy, then nobody is happy. In this video, you’ll learn some techniques for troubleshooting some challenging hard drive issues.",
+    "img": "https://i.ytimg.com/vi/fqG9mCdsIT0/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=fqG9mCdsIT0"
+  },
+  {
+    "objectiveNumber": "4.2",
+    "title": "Hard Drive Troubleshooting Tools",
+    "description": "To properly troubleshoot hard drives, you’ll need both physical tools and software utilities. In this video, you’ll learn about command line tools, file recovery software, partition repair, defragmentation, and more.",
+    "img": "https://i.ytimg.com/vi/qB3ROc1RxC4/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=qB3ROc1RxC4"
+  },
+  {
+    "objectiveNumber": "4.2",
+    "title": "Troubleshooting the Boot Process",
+    "description": "When your system starts, there are a number of processes that occur to load the operating system. In this video, you’ll learn about the steps of the boot process and the tools available to help troubleshoot any issues.",
+    "img": "https://i.ytimg.com/vi/oQpLSy4_0gw/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=oQpLSy4_0gw"
+  },
+  {
+    "objectiveNumber": "4.3",
+    "title": "Troubleshooting Video and Display Issues",
+    "description": "Our output devices can sometimes suffer from quality and performance problems. In this video, you’ll learn how to recognize and troubleshoot some of the most common video and display issues.",
+    "img": "https://i.ytimg.com/vi/l8ElYZNz7-Q/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=l8ElYZNz7-Q"
+  },
+  {
+    "objectiveNumber": "4.4",
+    "title": "Troubleshooting Networks",
+    "description": "It’s always the network, and it’s never the network. In this video, you’ll learn how to troubleshoot and resolve some of the most common network issues.",
+    "img": "https://i.ytimg.com/vi/gPiid3NyN6U/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=gPiid3NyN6U"
+  },
+  {
+    "objectiveNumber": "4.4",
+    "title": "Network Troubleshooting Tools",
+    "description": "You’ll need the right tools to properly troubleshoot a network. In this video, you’ll learn about troubleshooting with cable testers, loopback plugs, punch-down tools, toner probes, cable crimpers, and wireless locators.",
+    "img": "https://i.ytimg.com/vi/5GbpYsoyUYg/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=5GbpYsoyUYg"
+  },
+  {
+    "objectiveNumber": "4.4",
+    "title": "Network Troubleshooting at the Command Line",
+    "description": "Many network issues can be identified and resolved at the command line. In this video, you’ll learn how to use PING, IPCONFIG, IFCONFIG, TRACERT, NETSTAT, NET, NETDOM and NSLOOKUP.",
+    "img": "https://i.ytimg.com/vi/-55X-koiBFg/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=-55X-koiBFg"
+  },
+  {
+    "objectiveNumber": "4.5",
+    "title": "Troubleshooting Laptops",
+    "description": "Unlike a desktop computer, a laptop has unique hardware and software troubleshooting requirements. In this video, you’ll learn how to troubleshoot laptop-specific issues.",
+    "img": "https://i.ytimg.com/vi/G0kbgfQPDzc/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=G0kbgfQPDzc"
+  },
+  {
+    "objectiveNumber": "4.5",
+    "title": "Troubleshooting Mobile Devices",
+    "description": "Troubleshooting a mobile device can be a challenge for the best technician. The combination of proprietary hardware, unique software, and a mobile platform requires a unique set of troubleshooting skills. In this video, you’ll learn how to resolve a number of issues that can occur on mobile devices.",
+    "img": "https://i.ytimg.com/vi/f1W_gORf66I/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=f1W_gORf66I"
+  },
+  {
+    "objectiveNumber": "4.5",
+    "title": "Device Disassembly Best Practices",
+    "description": "If you’re dismantling a computing device, then you’ll want to follow some best practices. In this video, you’ll learn about device disassembly, documentation, organization, and which tools to use.",
+    "img": "https://i.ytimg.com/vi/g8I7lPO_wFY/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=g8I7lPO_wFY"
+  },
+  {
+    "objectiveNumber": "4.6",
+    "title": "Troubleshooting Printer Problems",
+    "description": "It is inevitable that your printer will eventually suffer some form of issue or downtime. In this video, you’ll learn some technique that you can apply towards troubleshooting the most common printer problems.",
+    "img": "https://i.ytimg.com/vi/WyQw8bk3HpM/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=WyQw8bk3HpM"
+  },
+  {
+    "objectiveNumber": "4.6",
+    "title": "Printer Troubleshooting Tools",
+    "description": "You should keep a number of tools available to help with your printer issues. In this video, you’ll learn how to use laser printer maintenance kits, toner vacuums, compressed air, and print spooler to help troubleshoot printer problems.",
+    "img": "https://i.ytimg.com/vi/ZmA9NPdWe1I/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=ZmA9NPdWe1I"
   }
 ];
-const DOMAIN_ONE_THREE_RESOURCES: Resource[] = [
-  {
-    objectiveNumber: 1.3,
-    title: 'Introduction to Ethernet',
-    description: "Ethernet is the most common network topology in the world. In this video, you’ll learn the fundamentals of how Ethernet communicates from one device to another and how half-duplex and full-duplex configuration can effect this data transfer.",
-    img: 'https://img.youtube.com/vi/iXfBbs9SSFQ/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=iXfBbs9SSFQ'
-  },
-  {
-    title: 'Network Switching Overview',
-    description: "The network switch is perhaps the most common piece of networking equipment in use today. In this video, you’ll learn how the switch makes forwarding decisions, how the switch reacts when it doesn’t know the destination of a frame, and how the ARP command can be used to validate a switch’s forwarding table.",
-    img: 'https://img.youtube.com/vi/jR3VoKZWJyc/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=jR3VoKZWJyc'
-  },
-  {
-    title: 'Broadcast Domains and Collision Domains',
-    description: 'A foundational knowledge of network architecture starts with the concepts of broadcast domains and collision domains. In this video, you’ll learn how modern network design has eliminated collision domains and how you can minimize the impact of broadcasts through the use of properly engineered broadcast domains.',
-    img: 'https://img.youtube.com/vi/SGbtLjIEVeo/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=SGbtLjIEVeo'
-  },
-  {
-    title: 'Unicasts, Broadcasts, and Multicasts',
-    description: 'There are many different ways to communicate across the network. In this video, you’ll compare the differences between unicasts, broadcasts, and multicasts.',
-    img: 'https://img.youtube.com/vi/jotgabyT-uI/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=jotgabyT-uI'
-  },
-  {
-    title: 'Protocol Data Units',
-    description: 'PDUs are the building blocks of network communication. In this video, you’ll learn about protocol data units and how they are used at different layers of the OSI model.',
-    img: 'https://img.youtube.com/vi/3RQW9s-aB6k/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=3RQW9s-aB6k'
-  },
-  {
-    title: 'Network Segmentation',
-    description: 'We commonly use network segmentation technologies to provide security and separation between logical areas of the network. In this video, you’ll learn about physical segmentation, logical VLAN segmentation, and 802.1Q VLAN trunking.',
-    img: 'https://img.youtube.com/vi/9L4qDmvKPjQ/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=9L4qDmvKPjQ'
-  },
-  {
-    title: 'Spanning Tree Protocol',
-    description: 'We rely on STP to prevent loops on our switched networks. In this video, you’ll learn the fundamentals of Spanning Tree Protocol and how STP reacts when changes occur to the network.',
-    img: 'https://img.youtube.com/vi/mLCpdsOZM9c/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=mLCpdsOZM9c'
-  },
-  {
-    title: 'Switch Interface Properties',
-    description: 'There are many different options available when configuring an interface on a switch. In this video, you’ll learn about basic interface settings, VLAN configurations, power over Ethernet, and much more.',
-    img: 'https://img.youtube.com/vi/dqQny4UXiX0/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=dqQny4UXiX0'
-  },
-  {
-    title: 'Static and Dynamic Routing',
-    description: 'A network administrator has many options for configuring and maintaining the routing table between layer 3 devices. In this video, you’ll learn about static routing, dynamic routing, and default routes.',
-    img: 'https://img.youtube.com/vi/YRzr56cwgCg/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=YRzr56cwgCg'
-  },
-  {
-    title: 'IGP and EGP',
-    description: 'Choosing a dynamic routing protocol is an important network design consideration. In this video, you’ll learn about autonomous systems, interior gateway protocols, and exterior gateway protocols.',
-    img: 'https://img.youtube.com/vi/14s-M01m1fQ/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=14s-M01m1fQ'
-  },
-  {
-    title: 'Dynamic Routing Protocols',
-    description: 'Different dynamic routing protocols use different criteria to determine which route is really the best. In this video, you’ll learn the differences between distance-vector, link-state, and hybrid routing protocols.',
-    img: 'https://img.youtube.com/vi/9390huk39mU/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=9390huk39mU'
-  },
-  {
-    title: 'IPv4 and IPv6 Addressing',
-    description: 'You’ll be working with IPv4 and IPv6 throughout your networking career. In this video, you’ll learn about the structure of an IPv4 address and an IPv6 address, and you’ll learn how to compress and uncompress IPv6 addresses.',
-    img: 'https://img.youtube.com/vi/U2IxdEYgoEg/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=U2IxdEYgoEg'
-  },
-  {
-    title: 'Configuring IPv6',
-    description: 'IPv6 has a number of differences from traditional IPv4. In this video, you’ll learn about dual-stack routing, IPv6 tunneling protocols, and the many uses of the IPv6 Neighbor Discovery Protocol.',
-    img: 'https://img.youtube.com/vi/NhRjwjt2Aog/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=NhRjwjt2Aog'
-  },
-  {
-    title: 'Prioritizing Traffic',
-    description: 'Most organizations are using many different applications, and certain applications will have a higher priority than others. In this video, you’ll learn how to prioritize this traffic as it traverses the network using packet shaping and quality of service options in your routers and switches.',
-    img: 'https://img.youtube.com/vi/uEKDZqI5osA/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=uEKDZqI5osA'
-  },
-  {
-    title: 'Network Address Translation',
-    description: 'We rely on NAT for our Internet access and to allow external access to our internal services. In this video, you’ll learn about private IP addresses, port address translation, and port forwarding.',
-    img: 'https://img.youtube.com/vi/JAYpfBvGVI8/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=JAYpfBvGVI8'
-  },
-  {
-    title: 'Access Control Lists',
-    description: 'Access control lists are used as packet filtering mechanisms on our enterprise networks. In this video, you’ll learn about ACLs and how they can be used to protect services on our networks.',
-    img: 'https://img.youtube.com/vi/6Yj1-pZmHvY/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=6Yj1-pZmHvY'
-  },
-  {
-    title: 'Circuit Switching and Packet Switching',
-    description: 'There are many different ways to get data from one end of the network to the other. In this video, you’ll learn about some of the popular technologies that use circuit switching and packet switching.',
-    img: 'https://img.youtube.com/vi/uBpacYBwYwM/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=uBpacYBwYwM'
-  },
-  {
-    title: 'Software-Defined Networking',
-    description: 'SDN has changed the way we design and implement services on modern networks. In this video, you’ll get an overview of SDN and how you can use distributed switching to virtualize your network.',
-    img: 'https://img.youtube.com/vi/EdVOeGDYHCU/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=EdVOeGDYHCU'
-  }
-];
-const DOMAIN_ONE_FOUR_RESOURCES: Resource[] = [
-  {
-    objectiveNumber: 1.4,
-    title: 'Binary Math',
-    description: "You’ll work with binary throughout your career, and you’ll often need to convert between binary and decimal values. In this video, you’ll learn my shortcut for quickly performing binary to decimal conversions.",
-    img: 'https://img.youtube.com/vi/mIbNZzoWE3k/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=mIbNZzoWE3k'
-  },
-  {
-    title: 'IPv4 Addresses',
-    description: "Configuring IPv4 is more than just a single IP address. In this video, you’ll learn about the structure of an IPv4 address and the important configuration options to use IPv4 on your network.",
-    img: 'https://img.youtube.com/vi/aEMtAFvouNU/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=aEMtAFvouNU'
-  },
-  {
-    title: 'Classful Subnetting',
-    description: "The first step in learning to subnet IPv4 is to understand the starting point. In this video, you’ll learn about IP classes and how to quickly calculate network values from an IP address and subnet mask.",
-    img: 'https://img.youtube.com/vi/GxE395bCANM/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=GxE395bCANM'
-  },
-  {
-    title: 'IPv4 Subnet Masks',
-    description: "An important skill when working with IP subnets is the ability to quickly translate between dotted-decimal notation and CIDR-block notation. In this video, you’ll learn how to quickly calculate these subnet mask notations.",
-    img: 'https://img.youtube.com/vi/L3dsWxn5RBU/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=L3dsWxn5RBU'
-  },
-  {
-    title: 'IPv6 Subnet Masks',
-    description: "Subnetting an IPv6 network is a bit less involved than IPv4. In this video, you’ll learn how to quickly configure IPv6 subnets for your network.",
-    img: 'https://img.youtube.com/vi/pQ4CnCQH1QE/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=pQ4CnCQH1QE'
-  },
-  {
-    title: 'Calculating IP Subnets and Hosts',
-    description: "The process of subnetting an IPv4 address can be calculated quickly with powers of two. In this video, you’ll learn how to quickly calculate the number of IP subnets and hosts per IP subnet.",
-    img: 'https://img.youtube.com/vi/qQEaAb_p8_E/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=qQEaAb_p8_E'
-  },
-  {
-    title: 'Seven Second Subnetting',
-    description: "Subnetting with (almost) zero math. In seven seconds or less!",
-    img: 'https://img.youtube.com/vi/ZxAwQB8TZsM/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=ZxAwQB8TZsM'
-  },
-  {
-    title: 'Assigning IPv4 Addresses',
-    description: "There are many different ways to configure a device with an IPv4 address. In this video, you’ll learn about DHCP, manual addressing, DHCP reservations, and APIPA.",
-    img: 'https://img.youtube.com/vi/Q0Aq_cYBcR0/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=Q0Aq_cYBcR0'
-  },
-  {
-    title: 'Assigning IPv6 Addresses',
-    description: "The IPv6 addressing of a device has similarities to IPv4, but there are also some significant differences. In this video, you’ll learn about DHCPv6 and how to modify a MAC address for use as a static IP address.",
-    img: 'https://img.youtube.com/vi/lfCFsniHsPk/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=lfCFsniHsPk'
-  },
-];
-const DOMAIN_ONE_FIVE_RESOURCES: Resource[] = [
-  {
-    objectiveNumber: 1.5,
-    title: 'Network Topologies',
-    description: "We often reference our network topologies as standard types, such as star, ring, and mesh. In this video, you’ll learn about physical and logical network documentation using these standard network topologies.",
-    img: 'https://img.youtube.com/vi/4nPnQVaRj4k/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=4nPnQVaRj4k'
-  },
-  {
-    title: 'Common Network Types',
-    description: "We use a number of different network types throughout our day. In this video, you’ll learn about the different network types that are used to get our data across the Internet.",
-    img: 'https://img.youtube.com/vi/GhHIOv3tIcE/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=GhHIOv3tIcE'
-  },
-  {
-    title: 'Internet of Things Topologies',
-    description: "We’re connecting an increasing number of devices to the Internet. These Internet of Things topologies are similar to traditional networks, but there are some important differences when compared to traditional networks. In this video, you’ll learn about some of the more popular IoT topologies, such as Z-Wave, ANT+, NFC, and more.",
-    img: 'https://img.youtube.com/vi/g9F5FauEWL4/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=g9F5FauEWL4'
-  },
-];
-const DOMAIN_ONE_SIX_RESOURCES: Resource[] = [
-  {
-    objectiveNumber: 1.6,
-    title: 'Wireless Standards',
-    description: "There have been many 802.11 wireless standards through the years. In this video, you’ll learn about the differences between 802.11a, 802.11b, 802.11g, 802.11n, and 802.11ac.",
-    img: 'https://img.youtube.com/vi/r3pZ0WYSk9g/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=r3pZ0WYSk9g'
-  },
-  {
-    title: 'Cellular Network Standards',
-    description: "Cellular networks are complex technologies that have been made easy enough for everyone to use. In this video, you’ll learn about GSM, CDMA and LTE cellular technologies.",
-    img: 'https://img.youtube.com/vi/GShWfJH6p2c/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=GShWfJH6p2c'
-  },
-  {
-    title: 'Wireless Network Technologies',
-    description: "802.11 wireless network technologies are many and varied. In this video, you’ll learn about 802.11 frequency use, MIMO, MU-MIMO, power levels, antenna types, and more.",
-    img: 'https://img.youtube.com/vi/eV9Mu3njz_M/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=eV9Mu3njz_M'
-  },
-];
-const DOMAIN_ONE_SEVEN_RESOURCES: Resource[] = [
-  {
-    objectiveNumber: 1.7,
-    title: 'Cloud Services and Delivery Models',
-    description: "The cloud has become an integrated part of today’s networks. In this video, you’ll learn about various cloud delivery models and how to manage cloud security policies.",
-    img: 'https://img.youtube.com/vi/iiUbTb3s1xc/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=iiUbTb3s1xc'
-  },
-];
-const DOMAIN_ONE_EIGHT_RESOURCES: Resource[] = [
-  {
-    objectiveNumber: 1.8,
-    title: 'An Overview of DNS',
-    description: "Domain Name Services provide an important conversion between FQDN and IP address. In this video, you’ll learn about the process that DNS uses to resolve a fully-qualified domain name to an IP address.",
-    img: 'https://img.youtube.com/vi/VqQQMXNhZBM/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=VqQQMXNhZBM'
-  },
-  {
-    title: 'DNS Record Types',
-    description: "DNS uses many different resource record types for network name services. In this video, you’ll learn about the DNS forward lookup file and some of the most common DNS record types.",
-    img: 'https://img.youtube.com/vi/D37RhTJ0ALY/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=D37RhTJ0ALY'
-  },
-  {
-    title: 'DHCP Addressing Overview',
-    description: "We rely on DHCP for the automatic configuration of our network devices. In this video, you’ll learn about the four steps of the DHCP process and how a DHCP relay can provide flexibility with DHCP services.",
-    img: 'https://img.youtube.com/vi/uLJpp8HFNBc/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=uLJpp8HFNBc'
-  },
-  {
-    title: 'Configuring DHCP',
-    description: "There are many options when configuring a DHCP server. In this video, you’ll learn about DHCP scopes, address allocation options, address reservations, and DHCP lease timers.",
-    img: 'https://img.youtube.com/vi/pEDFFH0Y4C4/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=pEDFFH0Y4C4'
-  },
-  {
-    title: 'An Overview of NTP',
-    description: "We rely on NTP to synchronize the clocks on all of our network-connected devices. In this video, you’ll learn about NTP servers, NTP clients, and how to configure NTP options on your workstation.",
-    img: 'https://img.youtube.com/vi/1GtySPUW-XA/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=1GtySPUW-XA'
-  },
-];
-const CONCEPTS_RESOURCES: Resource[][] = [
-  DOMAIN_ONE_ONE_RESOURCES, DOMAIN_ONE_TWO_RESOURCES,
-  DOMAIN_ONE_THREE_RESOURCES, DOMAIN_ONE_FOUR_RESOURCES,
-  DOMAIN_ONE_FIVE_RESOURCES, DOMAIN_ONE_SIX_RESOURCES,
-  DOMAIN_ONE_SEVEN_RESOURCES, DOMAIN_ONE_EIGHT_RESOURCES
-];
 
-/**
- * Resources 1.0 - Concepts
- **/
-const DOMAIN_TWO_ONE_RESOURCES: Resource[] = [
-  {
-    objectiveNumber: 2.1,
-    title: 'Copper Cabling',
-    description: 'Copper cables are the foundation of our networks, but not every copper cable is the same. In this video, you’ll learn about unshielded and shielded twisted pair, network cabling standards, and different types of network cabling.',
-    img: 'https://img.youtube.com/vi/v9m6uBaKD2s/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=v9m6uBaKD2s'
-  },
-  {
-    title: 'Copper Connectors',
-    description: 'There are many different ways to connect copper cable to your networking equipment. In this video, you’ll learn about RJ11, RJ45, BNC, DB-9/DB-25, and F connectors.',
-    img: 'https://img.youtube.com/vi/_MF8oQdTCgo/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=_MF8oQdTCgo'
-  },
-  {
-    title: 'Optical Fiber',
-    description: 'Optical fiber operates with very different physics than copper cabling. In this video, you’ll learn about multimode fiber, single-mode fiber, and the difference between UPC and APC connections.',
-    img: 'https://img.youtube.com/vi/_AnY7JMKVCg/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=_AnY7JMKVCg'
-  },
-  {
-    title: 'Optical Fiber Connectors',
-    description: 'The connector types between fiber-connected devices can vary. In this video, you’ll learn about ST, SC, LC, and MT-RJ fiber connectors.',
-    img: 'https://img.youtube.com/vi/WyMNUdi0ZRM/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=WyMNUdi0ZRM'
-  },
-  {
-    title: 'Copper Termination Standards',
-    description: 'Once you’ve picked your copper cabling, you’ll need to terminate it properly. In this video, you’ll learn about the different standards associated with copper cabling.',
-    img: 'https://img.youtube.com/vi/jaUww4A8LeU/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=jaUww4A8LeU'
-  },
-  {
-    title: 'Network Termination Points',
-    description: 'Most network designs follow similar methods to connect the end stations to the network. In this video, you’ll learn about patch panels, punch-down blocks, patch panels, and fiber distribution panels.',
-    img: 'https://img.youtube.com/vi/QYdYnF-YUG8/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=QYdYnF-YUG8'
-  },
-  {
-    title: 'Network Transceivers',
-    description: 'Transceivers can provide options when connecting infrastructure equipment to the network. In this video, you’ll learn about transceiver technology, duplex and bi-directional transceivers, GBICs, SFP/SFP+, and QSFP transceivers.',
-    img: 'https://img.youtube.com/vi/UTu5bz6qgkw/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=UTu5bz6qgkw'
-  },
-  {
-    title: 'Ethernet Standards',
-    description: 'The IEEE maintains Ethernet standards that apply to many different speeds and media. In this video, you’ll learn about 100BASE-TX, 1000BASE-T, 1000BASE-SX, 1000BASE-LX, and 10GBASE-T standards.',
-    img: 'https://img.youtube.com/vi/X8MofnwqOSI/mqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=X8MofnwqOSI'
-  },
-];
-
-const INFRASTRUCTURE_RESOURCES: Resource[][] = [
-  DOMAIN_TWO_ONE_RESOURCES
-];
-
-
-
-export const RESOURCES: Resource[][] = [
-  ...CONCEPTS_RESOURCES, ...INFRASTRUCTURE_RESOURCES
-];

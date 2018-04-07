@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, NavParams, ViewController } from 'ionic-angular';
 import { Resource } from '../../models/resource';
 import { DomainService } from '../../services/domain.service';
+import { Objective } from '../../models/objective';
 
 @Component({
   selector: 'page-resources',
@@ -10,7 +11,8 @@ import { DomainService } from '../../services/domain.service';
 export class ResourcesPage {
 
   resources: Resource[];
-  domainTitle: string;
+  objective: Objective;
+
   constructor(
     private domainService: DomainService,
     private viewCtrl: ViewController,
@@ -20,7 +22,7 @@ export class ResourcesPage {
 
   ionViewDidLoad() {
     this.resources = this.navParams.get('resources');
-    this.domainTitle = this.navParams.get('domain');
+    this.objective = this.navParams.get('objective');
   }
 
   onModalClose() {
