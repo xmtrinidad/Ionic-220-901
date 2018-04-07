@@ -31,8 +31,9 @@ export class AcronymsPage implements OnInit{
   }
 
   sortData(sortSelected: string) {
+    console.log(sortSelected);
     // Do nothing if same sort
-    if (sortSelected === this.sort) return;
+    if (sortSelected === this.sort || sortSelected === null) return;
     this.sort = sortSelected;
     this.acronyms.sort((a, b) => {
       // Sort ascending
