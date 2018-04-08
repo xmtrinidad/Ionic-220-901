@@ -26,7 +26,7 @@ export class DomainPage implements OnInit{
   }
 
   objectiveSelected(objective: Objective, color: string) {
-    this.navCtrl.push(ObjectiveDetailPage, {objective: objective, color: color});
+    this.navCtrl.push(ObjectiveDetailPage, {objective: objective, color: color, domainTitle: this.domain.title});
   }
 
   getColor() {

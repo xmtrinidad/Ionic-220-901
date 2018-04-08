@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.xmtrinidad.a220-901" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>N10-007 Exam Objectives</name>
-    <description>The latest Network+ N10-007 Exam Objectives</description>
-    <author email="xmtrinidad@gmail.com" href="https://github.com/xmtrinidad/Ionic-N10-007">Xavier Trinidad</author>
+    <name>A+ 220-901 Exam Objectives</name>
+    <description>The CompTIA A+ 220-901 Exam Objectives with resources to Professor Messer videos</description>
+    <author email="xmtrinidad@gmail.com" href="https://github.com/xmtrinidad/Ionic-220-901">Xavier Trinidad</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

@@ -13,6 +13,7 @@ import { Resource } from '../../models/resource';
   templateUrl: 'objective-detail.html',
 })
 export class ObjectiveDetailPage implements OnInit {
+  domainTitle: string;
   objective: Objective;
   color: string;
   bullets: Bullet;
@@ -33,6 +34,7 @@ export class ObjectiveDetailPage implements OnInit {
     this.objective = this.navParams.data.objective;
     this.color = this.navParams.data.color;
     this.bullets = this.domainService.getBullets(this.objective.sectionNumber);
+    this.domainTitle = this.navParams.data.domainTitle;
   }
 
   onHomeClick() {
