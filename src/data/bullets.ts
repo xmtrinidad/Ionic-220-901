@@ -298,12 +298,8 @@ const DOMAIN_ONE: Bullet[] = [
         "title": "• Other connector types",
         "subBullets": [
           "- VGA, HDMI, DVI",
-          "- Audio, Analog"
-        ]
-      },
-      {
-        "title": "• Digital (Optical connector)",
-        "subBullets": [
+          "- Audio, Analog",
+          "- Digital (Optical connector)",
           "- RJ-45, RJ-11",
           "- Thunderbolt"
         ]
@@ -426,7 +422,7 @@ const DOMAIN_ONE: Bullet[] = [
     ]
   },
   {
-    objectiveNumber: 1.10,
+    objectiveNumber: "1.10",
     bullets: [
       {
         "title": "• Types",
@@ -1341,9 +1337,9 @@ const DOMAIN_FOUR: Bullet[] = [
         ]
       },
       {
-        "title": "• Disassembling processes for proper re-assembly",
+        "title": "• Disassembling processes",
         "subBullets": [
-          "- Document/label cable and screw locations",
+          "- Document/label",
           "- Organize parts",
           "- Refer to manufacturer resources",
           "- Use appropriate hand tools"
